@@ -12,7 +12,7 @@ Esta simulação compara o **resfriamento térmico** de duas superfícies:
 - 🧱 **Concreto** (alta inércia térmica)
 - 🌱 **Grama** (resfriamento mais eficiente)
 
-O modelo é simplificado e considera um coeficiente efetivo de perda de calor.
+O modelo é simplificado e considera um coeficiente efetivo de perda de energia na forma de calor.
 """)
 
 # ------------------------------
@@ -112,13 +112,12 @@ col2.metric(
 with st.expander("📘 Discussão do Modelo"):
     st.markdown("""
 **O que o modelo mostra:**
-- Superfícies com maior coeficiente térmico perdem calor mais rapidamente
-- O concreto permanece mais quente por mais tempo → ilha de calor
+- Superfícies com maior coeficiente térmico perdem energia na forma de calor mais rapidamente
+- O concreto permanece com maior temperatura por mais tempo → ilha de calor
 
 **Limitações do modelo:**
 - Não considera radiação solar contínua
 - Não diferencia condução, convecção e evaporação
-- Modelo 0D (temperatura média da superfície)
 
 **Extensões possíveis:**
 - Adicionar fluxo solar
